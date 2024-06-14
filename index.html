@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" media="(max-width: 320px)" href="mobilestyle.css" />
     <title>Support</title>
   </head>
   <body>
@@ -25,7 +24,7 @@
           </p>
           <nav class="header__menu">
             <ul class="header__menu-list">
-              <li class="header__menu-item">
+              <li class="header__menu-item header__menu-white">
                 <img src="img/icon-message.png" alt="иконка сообщения" />
                 <a class="header__menu-link" href="">Онлайн-чат</a>
               </li>
@@ -112,43 +111,56 @@
       </div>
       <h2>Часто задаваемые вопросы</h2>
       <div class="main__slider-container">
-        <ul class="main__slider-questions">
-          <li class="main__slider-question">
-            <a class="main__slider-link first-link" href=""
-              >Где работает доставка?</a
-            >
-            <img src="img/bag.png" alt="пакет" />
-          </li>
-          <li class="main__slider-question">
-            <div class="main__slider-text">
-              <a class="main__slider-link" href="">Где работает доставка?</a>
-              <p>
-                Карта лояльности с вашим номером покупателя. Это карта
-                лояльности с вашим
-              </p>
-            </div>
-          </li>
-          <li class="main__slider-question">
-            <div class="main__slider-text">
-              <a class="main__slider-link" href="">Где работает доставка?</a>
-              <p>Карта лояльности с вашим номером</p>
-            </div>
-            <img src="img/bag.png" alt="пакет" />
-          </li>
-          <li class="main__slider-question">
-            <div class="main__slider-text">
-              <a class="main__slider-link" href=""
-                >В какое время возможен самовывоз В какое время возможен
-                самовывоз?</a
-              >
-              <p>Карта лояльности с вашим номером</p>
-            </div>
-          </li>
-        </ul>
-        <button type="button" class="main__slider-button">
-          <img src="img/icon-arrow.png" alt="" />
+        <button type="button" class="main__slider-button slider-prev">
+          <img
+            class="left-arrow"
+            src="img/icon-left-arrow.png"
+            alt="стрелочка влево"
+          />
         </button>
+        <div class="main__slider">
+          <ul class="main__slider-questions">
+            <li class="main__slider-question">
+              <a class="main__slider-link first-link" href=""
+                >Где работает доставка?</a
+              >
+              <img src="img/bag.png" alt="пакет" />
+            </li>
+            <li class="main__slider-question">
+              <div class="main__slider-text">
+                <a class="main__slider-link" href="">Где работает доставка?</a>
+                <p>
+                  Карта лояльности с вашим номером покупателя. Это карта
+                  лояльности с вашим
+                </p>
+              </div>
+            </li>
+            <li class="main__slider-question">
+              <div class="main__slider-text">
+                <a class="main__slider-link" href="">Где работает доставка?</a>
+                <p>Карта лояльности с вашим номером</p>
+              </div>
+              <img src="img/bag.png" alt="пакет" />
+            </li>
+            <li class="main__slider-question">
+              <div class="main__slider-text">
+                <a class="main__slider-link" href=""
+                  >В какое время возможен самовывоз В какое время возможен
+                  самовывоз?</a
+                >
+                <p>Карта лояльности с вашим номером</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
+      <button type="button" class="main__slider-button slider-next">
+        <img
+          class="right-arrow"
+          src="img/icon-right-arrow.png"
+          alt="стреолочка вправо"
+        />
+      </button>
     </div>
     <div class="footer">
       <h2>Справка</h2>

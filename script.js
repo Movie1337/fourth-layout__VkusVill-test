@@ -1,22 +1,18 @@
-const slider = document.querySelector(".main__slider-container");
+let offset = 0;
 const sliderLine = document.querySelector(".main__slider-questions");
-const sliderImages = document.querySelectorAll(".main__slider-question");
-const sliderBtnNext = document.querySelector(".main__slider-button");
 
-let sliderCount = 0;
-let sliderWidth = slider.offsetWidth;
-
-sliderBtnNext.addEventListener("click", nextSlide);
-
-function nextSlide() {
-  sliderCount++;
-
-  if (sliderCount >= sliderImages.length) {
-    sliderCount = 0;
+document.querySelector(".slider-next").addEventListener("click", function () {
+  offset += 306;
+  if (offset > 306) {
+    offset = 0;
   }
-  rollSlider();
-}
+  sliderLine.style.left = -offset + "px";
+});
 
-function rollSlider() {
-  sliderLine.style.transform = `translateX(${-sliderCount * sliderWidth}px)`;
-}
+document.querySelector(".slider-prev").addEventListener("click", function () {
+  offset -= 306;
+  if (offset < 0) {
+    offset = 306;
+  }
+  sliderLine.style.left = -offset + "px";
+});
